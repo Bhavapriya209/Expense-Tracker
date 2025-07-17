@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>💰 Expense Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-container">
+    <h1>💸 Expense Tracker</h1>
+
+    <form id="transactionForm">
+      <input type="text" id="description" placeholder="Description" required />
+      <input type="number" id="amount" placeholder="Amount (₹)" required />
+      <select id="category">
+        <option>Food</option>
+        <option>Transport</option>
+        <option>Shopping</option>
+        <option>Other</option>
+      </select>
+      <select id="type">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+      <button type="submit">Add</button>
+    </form>
+
+    <div class="summary">
+      <p>💰 Income: ₹<span id="totalIncome">0</span></p>
+      <p>💸 Expense: ₹<span id="totalExpense">0</span></p>
+      <p>🧾 Balance: ₹<span id="netBalance">0</span></p>
+    </div>
+
+    <ul id="transactionList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

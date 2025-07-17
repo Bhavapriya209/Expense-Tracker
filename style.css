@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #eaf8f1;
+}
+.app-container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 128, 0, 0.1);
+}
+h1 {
+  text-align: center;
+  color: #2d6a4f;
+}
+form input, form select, form button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+form button {
+  background-color: #2d6a4f;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.summary p {
+  font-weight: bold;
+  color: #2d6a4f;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  background-color: #f0fdf4;
+  padding: 10px;
+  margin: 10px 0;
+  border-left: 5px solid green;
+}
+li.expense {
+  border-left: 5px solid red;
+}
+li small {
+  color: gray;
+}
